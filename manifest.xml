@@ -4,7 +4,7 @@
         <author>Gerard Kanters</author>
         <version>1.0.2</version>
         <category>enhancement</category>
-        <description>Simple script to online check and correct for illegal characters in name</description>
+        <description>Small script to check and correct for illegal characters in name while typing</description>
         <website>https://www.centillien.com</website>
         <copyright>Centillien B.V.</copyright>
         <license>GNU General Public License version 2</license>
