@@ -16,7 +16,7 @@ $('input[name=name]').bind('input propertychange', function () {
 		$(this).val(function (i, v) {
 			return v.replace(blacklist, '');
 		}).val();
-	elgg.register_error(elgg.echo("profile_manager:invalidchar"));
+	elgg.register_error(elgg.echo("name_check:invalidchar"));
 	}
 });
 
