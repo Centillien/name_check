@@ -4,7 +4,7 @@
  */
 
 $english = array(
-	'name_check:invalidchar' => 'This character is not allowed in a name and has been removed',
+	'name_check:invalidchar' => 'These characters %s are not allowed in names and are removed',
 );
 
 add_translation("en", $english);
