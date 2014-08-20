@@ -11,7 +11,7 @@
 elgg.provide('elgg.name_check');
 
 $('input[name=name]').bind('input propertychange', function () {
-    var blacklist = /[\'/\\"*$#!%^(){}~?<>;|Â¬`@+=]/;
+    var blacklist = /[\'/\\"*$#!%^() {}~?<>;|Â¬`@+=]/;
     if (blacklist.test($(this).val())) {
         elgg.register_error(elgg.echo("name_check:invalidchar", [blacklist]));
     }
