@@ -10,12 +10,14 @@
 <script>
 elgg.provide('elgg.name_check');
 
-$('input[name=name]').bind('input propertychange', function() {
-    var blacklist = /[\'/\\"*$#!%^(){} ~?<>;|¬`@+=]/.test($(this).val());
-    if(blacklist) {
-	$(this).val(function(i, v) {return v.slice(0, -1);}).val();
-	elgg.register_error(elgg.echo("name_check:invalidchar"));
-    }
+$('input[name=name]').bind('input propertychange', function () {
+	var blacklist = /[\'/\\"*$#!%^(){}~?<>;|Â¬`@+=]/;
+	while (blacklist.test($(this).val())) {
+		$(this).val(function (i, v) {
+			return v.replace(blacklist, '');
+		}).val();
+	elgg.register_error(elgg.echo("profile_manager:invalidchar"));
+	}
 });
 
 elgg_load_js('elgg.name_check');
