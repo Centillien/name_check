@@ -22,5 +22,4 @@ $('input[name=name]').bind('input propertychange', function () {
     }
 });
 
-elgg_load_js('elgg.name_check');
 </script>
