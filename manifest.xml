@@ -2,7 +2,7 @@
 <plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
         <name>Name Check</name>
         <author>Gerard Kanters</author>
-        <version>1.0.2</version>
+        <version>1.0.3</version>
         <category>enhancement</category>
         <description>Small script to check and correct for illegal characters in name while typing</description>
         <website>https://www.centillien.com</website>
